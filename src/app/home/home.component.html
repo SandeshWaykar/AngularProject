@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row bg-primary sticky-top" style="height: 55px">
+    <div class="col d-flex align-items-center" style="color: white; font-size: 23px;">
+      <fa-icon
+        [icon]="faBookOpen"
+        style="font-size: 35px;color: darkorange; margin-right: 8px"
+      ></fa-icon>
+      English Vocabulary
+    </div>
+    <div class="col d-flex justify-content-end align-items-center">
+      <!-- <a class="btn btn-outline-light mr-3" routerLink="/home/">Personal</a> -->
+      <a class="btn btn-outline-light mr-3" routerLink="/home/education">
+        Start Quiz
+      </a>
+      <a class="btn btn-outline-light mr-3" routerLink="/home/contact-us">
+        About Us
+      </a>
+
+      <button class="btn btn-outline-light mr-3" (click)="processLogout()">
+        Log Out
+      </button>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

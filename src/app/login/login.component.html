@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row" style="height: 100vh">
+    <!-- Left Block -->
+    <div class="col bg-info flex-column justify-content-center align-items-center">
+      <h3 class="mt-4" style="margin-left: 130px; color: white;">Welcome to Vocabulary Builder</h3>
+      <div style="margin-top: 15px;"><img src="./assets/vocabimg.png" alt="myimage"
+          style="height: 80vh; width: 100%;"></div>
+
+
+    </div>
+
+    <!-- Right Block-->
+    <div class="col bg-light d-flex flex-column justify-content-center align-items-center" [formGroup]="fbFormGroup">
+      <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+        Invalid username or password !!
+      </div>
+
+      <div class="col bg-info d-flex justify-content-center align-items-center">
+
+        <div style=" background-color:tomato; border: 2px solid grey;border-radius: 25px; padding: 30px 40px; height: 75%; width: 80%;">
+
+          <div class="h3 mb-4 d-flex flex-column justify-content-center align-items-center ">Quiz Login</div>
+
+          <div class="icon mb-3 d-flex flex-column justify-content-center align-items-center">
+            <fa-icon [icon]="faBookOpen" style="font-size: 54px"></fa-icon>
+          </div>
+          <div class="mt-4">
+            <input type="text" placeholder="Enter Username" class="form-control" formControlName="username" />
+          </div>
+
+          <div class="mt-4">
+            <input type="password" placeholder="Enter Password" class="form-control" formControlName="password" />
+          </div>
+
+          <button class="btn btn-md btn-primary mt-4 mb-3" style="margin-left: 145px;" [disabled]="!fbFormGroup.valid"
+            (click)="loginProcessHere()">
+            Login Here
+          </button>
+
+          <div style="margin-left: 148px;"><a routerLink="/register">Register Here</a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>

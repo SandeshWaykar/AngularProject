@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of list">
+      <div class="col-12 my-3" style="border:2px solid grey;" *ngIf="item.show">
+
+        <div>
+          <img src="./assets/english-quiz.png" alt="">
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of list">
+      <div class="col-12 my-3" style="border:2px solid forestgreen;padding: 30px 30px;" *ngIf="item.show">
+        <h5>Importance of Vocabulary:-</h5>
+
+        <div>
+          A vocabulary, also known as a wordstock or word-stock, is a set of familiar words within a person's language.
+          A vocabulary, usually developed with age, serves as a useful and fundamental tool for communication and
+          acquiring knowledge. <br>
+          Vocabulary plays a fundamental role in the reading process, and contributes greatly to a reader's
+          comprehension. A reader cannot understand a text without knowing what most of the words mean. Students learn
+          the meanings of most words indirectly, through everyday experiences with oral and written language. Other
+          words are learned through carefully designed instruction. <br>
+          Vocabulary refers to the words we must understand to communicate effectively. Educators often consider four
+          types of vocabulary: listening, speaking, reading, and writing. Listening vocabulary refers to the words we
+          need to know to understand what we hear. Speaking vocabulary consists of the words we use when we speak.
+          Reading vocabulary refers to the words we need to know to understand what we read. Writing vocabulary consists
+          of the words we use in writing. <br>
+          You can see demo vocabulary words of day today life ☟
+        </div>
+
+        <button class="btn btn-outline-secondary" (click)="showDetailsModal(item)">
+          Example
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of list">
+      <div class="col-12 my-3" style="border:2px solid lightblue; padding: 30px 30px;" *ngIf="item.show">
+
+        <div>
+          <h5>Perpective of people:-</h5>
+          <h6>A kid's perspective: What this feels like to me</h6>
+          • Children will usually express their frustration and difficulties in a general way, with statements like "I
+          hate reading!" or "This is stupid!". But if they could, this is how kids might describe how their vocabulary
+          difficulties affect their reading: <br>
+
+          • I heard my friend tell what happened in the movie but I didn't really understand what he said about it. <br>
+          • I feel like I just use the same words over and over again in my writing. <br>
+          • I don't like to read on my own because I don't understand lots of the words in the book. <br>
+          • Click here to find out what kids can do to help themselves. <br> <br>
+          <h6>A parent's perspective: What I see at home</h6>
+          Here are some clues for parents that a child may have difficulties as a result of his or her vocabulary: <br>
+
+          • She's unable to tell about her day in a way that makes sense. <br>
+          • She misuses common words. <br>
+          • He doesn't link words from a book to similar words from another book or from real life. <br>
+          • He's often not able to find the right word to describe something. <br>
+          • Click here to find out what parents can do to help a child at home. <br> <br>
+          <h6>A teacher's perspective: What I see in the classroom</h6>
+          Here are some clues for teachers that a student may have difficulties as a result of his or her vocabulary:
+          <br>
+
+          • She has questions about a lot of word meanings in a grade appropriate text. <br>
+          • He seems to have a weak vocabulary. <br>
+          • She is not able to make connections among words in various texts. <br>
+          • He's often not able to find the right word to describe something. <br>
+    
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of list">
+      <div class="col-12 my-3 d-flex flex-column justify-content-center align-items-center" *ngIf="item.show">
+
+        <div>
+          <img src="./assets/Quiz_your_english.png" alt="">
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
